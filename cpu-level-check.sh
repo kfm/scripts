@@ -1,6 +1,9 @@
 #!/usr/bin/sh
 set -e
 
+# usage cpu-level-check.sh [-v]
+# source: https://unix.stackexchange.com/questions/631217/how-do-i-check-if-my-cpu-supports-x86-64-v2
+
 verbose=
 while getopts v OPTLET; do
   case "$OPTLET" in
